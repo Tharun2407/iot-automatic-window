@@ -1,8 +1,13 @@
 # IoT Enabled Automatic Window Opening System
+![IoT Automatic Window Opening System](30e02c2d-7338-4ca6-a97a-4c65e06eaf4c.jpg)
 
 An IoT-based smart window automation system developed using ESP32,
 DHT11 temperature sensor, MQ135 air-quality sensor, servo motor,
 IR remote, and Blynk IoT platform.
+
+## Project Demonstration
+
+[▶️ Watch the Project Demonstration](WhatsApp%20Video%202026-10-01%20at%208.41.39%20PM.mp4)
 
 ## Project Overview
 

@@ -57,6 +57,10 @@ The system also provides remote monitoring and manual control through the Blynk 
 8. An IR remote can also be used for manual window control.
 
 ## 🔄 Operating Modes
+        Project Demonstration
+
+[▶️ Watch the Project Demonstration](WhatsApp%20Video%202026-10-01%20at%208.41.39%20PM.mp4)
+
 
 ### Automatic Mode
 

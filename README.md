@@ -1,74 +1,96 @@
 # IoT Enabled Automatic Window Opening System
 
-![IoT Automatic Window Opening System](ce9075fd-1ba8-4087-8afd-7e5ab7931ed1.jpg)
+![Project Preview](./30e02c2d-7338-4ca6-a97a-4c65e06eaf4c.jpg)
 
-An IoT-based smart window automation system developed using ESP32, DHT11 temperature sensor, MQ135 air-quality sensor, servo motor, IR remote, and Blynk IoT platform.
+An IoT-based smart window automation system developed using **ESP32, DHT11 temperature sensor, MQ135 air-quality sensor, servo motor, IR remote, and Blynk IoT platform**.
+
+---
 
 ## 📌 Project Overview
 
-The IoT Enabled Automatic Window Opening System is designed to automatically control a window based on environmental conditions.
+The **IoT Enabled Automatic Window Opening System** automatically controls a window based on environmental conditions.
 
-The ESP32 continuously monitors temperature and air quality using the DHT11 and MQ135 sensors. When the temperature or air-quality level exceeds a predefined threshold, the servo motor automatically opens the window to improve ventilation.
+The ESP32 continuously monitors temperature and air quality using the **DHT11** and **MQ135** sensors. When the temperature or air-quality value exceeds a predefined threshold, the servo motor automatically opens the window to improve ventilation.
 
-The system also provides remote monitoring and manual control through the Blynk IoT platform and an IR remote.
+The system also supports remote monitoring and manual control through the **Blynk IoT platform** and an **IR remote**.
+
+---
 
 ## ✨ Features
 
 - 🌡️ Temperature monitoring using DHT11
 - 🌫️ Air-quality monitoring using MQ135
-- 🪟 Automatic window opening based on environmental conditions
-- ⚙️ Servo motor-based window control
-- 📱 Remote monitoring through Blynk IoT
-- 🎮 Manual control using IR remote
+- ⚙️ Automatic window opening using servo motor
+- 📱 Remote monitoring using Blynk IoT
+- 🎛️ Manual control through Blynk
+- 📡 IR remote-based window control
 - 🔄 Automatic and manual operating modes
-- 📡 ESP32-based IoT connectivity
+- 🚪 Automatic ventilation based on environmental conditions
 
-## 🧰 Components Used
+---
 
-- ESP32 Development Board
-- DHT11 Temperature and Humidity Sensor
-- MQ135 Air Quality Sensor
-- Servo Motor
-- IR Receiver
-- IR Remote
-- Battery
-- Connecting Wires
-- Blynk IoT Platform
+## 🛠️ Components Used
 
-## 💻 Technologies Used
+| Component | Purpose |
+|---|---|
+| ESP32 | Main microcontroller |
+| DHT11 | Temperature measurement |
+| MQ135 | Air-quality measurement |
+| Servo Motor | Opens and closes the window |
+| IR Receiver | Receives IR remote commands |
+| IR Remote | Manual window control |
+| Wi-Fi | Internet connectivity |
+| Blynk IoT | Remote monitoring and control |
 
-- C/C++
-- Arduino IDE
-- ESP32
-- Blynk IoT
-- IoT Sensors
-- Embedded Systems
-- Servo Motor Control
+---
+
+## 🔌 Pin Configuration
+
+| Component | ESP32 Pin |
+|---|---:|
+| DHT11 Data | GPIO 4 |
+| MQ135 Analog Output | GPIO 34 |
+| Servo Motor | GPIO 18 |
+| IR Receiver | GPIO 15 |
+
+---
 
 ## ⚙️ Working Principle
 
-1. The ESP32 initializes the sensors, servo motor, IR receiver, Wi-Fi, and Blynk connection.
-2. The DHT11 sensor measures the surrounding temperature.
-3. The MQ135 sensor monitors the air-quality level.
-4. The ESP32 compares the sensor readings with predefined threshold values.
-5. If the temperature or air-quality level exceeds the threshold, the servo motor opens the window.
-6. If the environmental conditions return to the normal range, the system closes the window.
-7. The Blynk IoT platform allows remote monitoring and manual control.
-8. An IR remote can also be used for manual window control.
+1. The ESP32 starts and connects to Wi-Fi.
+2. The ESP32 connects to the Blynk IoT platform.
+3. The DHT11 measures the surrounding temperature.
+4. The MQ135 measures the air-quality level.
+5. The ESP32 compares the sensor values with predefined thresholds.
+6. If the temperature or air quality exceeds the threshold, the servo opens the window.
+7. Otherwise, the window remains closed.
+8. The user can also control the window manually through Blynk or an IR remote.
 
-## 🔄 Operating Modes
-        Project Demonstration
+---
 
-[▶️ Watch the Project Demonstration](WhatsApp%20Video%202026-10-01%20at%208.41.39%20PM.mp4)
+## 📱 Blynk IoT Controls
 
+| Virtual Pin | Function |
+|---|---|
+| V0 | Open Window |
+| V1 | Close Window |
+| V2 | Display Temperature |
+| V3 | Auto/Manual Mode |
+| V4 | Display Air Quality |
 
-### Automatic Mode
+---
 
-In automatic mode, the ESP32 controls the window according to temperature and air-quality readings.
+## 🎛️ IR Remote Control
+
+| IR Command | Function |
+|---:|---|
+| 90 | Open Window |
+| 8 | Close Window |
+
+---
+
+## 📊 System Thresholds
 
 ```text
-Temperature ≥ 30°C
-        OR
-Air Quality ≥ 600
-        ↓
-Window Opens
+Temperature Limit = 30 °C
+Air Quality Limit = 600

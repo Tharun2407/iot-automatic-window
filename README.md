@@ -1,5 +1,5 @@
 # IoT Enabled Automatic Window Opening System
-![IoT Automatic Window Opening System](30e02c2d-7338-4ca6-a97a-4c65e06eaf4c.jpg)
+![IoT Automatic Window Opening System](ce9075fd-1ba8-4087-8afd-7e5ab7931ed1.jpg)
 
 An IoT-based smart window automation system developed using ESP32,
 DHT11 temperature sensor, MQ135 air-quality sensor, servo motor,
